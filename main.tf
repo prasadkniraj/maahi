@@ -5,7 +5,7 @@ secret_key = "v33t5pdHNeA+UAUjcRdBBRbP9Fuh+YCYKPnJJdG4"
 }
 
 resource "aws_instance" "one" {
-  ami          = "ami-078efad6f7ec18b8a"
+  ami   = "ami-078efad6f7ec18b8a"
   instance_type   = "t2.micro"
   key_name        = "terrakeypair"
   vpc_security_group_ids = [aws_security_group.three.id]
@@ -24,7 +24,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-078efad6f7ec18b8a"
+  ami       = "ami-078efad6f7ec18b8a"
   instance_type   = "t2.micro"
   key_name        = "terrakeypair"
   vpc_security_group_ids = [aws_security_group.three.id]
